@@ -1,6 +1,7 @@
 <template>
+<div>
+  <TopTabBar></TopTabBar>
   <div class="md-example-child md-example-child-bill-1">
-    <TopTabBar></TopTabBar>
     <md-bill>
       <div class="header-slot" slot="header">
         <h1 class="title">借款单据</h1>
@@ -33,11 +34,12 @@
       </div>
     </md-bill>
 	</div>
+</div>
 </template>
 
 <script>
 import {Bill, DetailItem, Icon, Tag} from 'mand-mobile'
-import TopTabBar from '../Other/TopTabBar.vue'
+import TopTabBar from '../Other/BackTabBar.vue'
 
 export default {
   name: 'bill-demo',

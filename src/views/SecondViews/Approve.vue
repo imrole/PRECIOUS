@@ -1,7 +1,8 @@
 <template>
+<div>
+  <TopTabBar></TopTabBar>
   <div class="md-example-child md-example-child-steps md-example-child-steps-7">
-    <TopTabBar></TopTabBar>
-    <NoticeBar :msg="msg"> </NoticeBar>
+    <NoticeBar :msg="msg"></NoticeBar>
     <md-steps
       direction="vertical"
       :steps="steps"
@@ -10,12 +11,13 @@
     >
     </md-steps>
   </div>
+</div>
 </template>
 
 <script>
 import {Steps, Icon} from 'mand-mobile'
 import NoticeBar from '../Other/NoticeBar.vue'
-import TopTabBar from '../Other/TopTabBar.vue'
+import TopTabBar from '../Other/BackTabBar.vue'
 
 export default {
   name: 'steps',

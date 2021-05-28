@@ -1,5 +1,7 @@
 <!--功能-->
 <template>
+<div>
+  <OrderTopTabBar></OrderTopTabBar>
   <div class="md-example-child md-example-child-skeleton md-example-child-skeleton-2">
     <md-field>
       <md-skeleton avatar title :loading="loading" :row="2" class="skeleton-item">
@@ -8,7 +10,6 @@
             <md-icon name="edit" slot="right"/>
         </md-cell-item>
         -->
-        <OrderTopTabBar></OrderTopTabBar>
         <md-cell-item title="交通银行" brief="展示摘要描述" addon="附加文案" arrow>
           <span class="holder" slot="left"></span>
         </md-cell-item>
@@ -20,6 +21,7 @@
       </md-skeleton>
     </md-field>
   </div>
+</div>
 </template>
 
 <script>
@@ -37,7 +39,7 @@ export default {
     [Field.name]: Field,
     [CellItem.name]: CellItem,
     [Icon.name]:Icon,
-    [OrderTopTabBar.name]:OrderTopTabBar,
+    OrderTopTabBar,
   },
   mounted() {
     window.startLoading = this.startLoading
