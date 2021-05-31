@@ -24,7 +24,7 @@ export default {
     return {
       open: false,
       items:[
-          {id: 1, label: '个人信息', to: 'Pay'},
+          {id: 1, label: '个人信息', to: 'Captcha'},
           {id: 2, label: '申请记录', to: 'Bill'},
           {id: 3, label: '审批进度', to: 'Approve'}
       ]

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/User.vue'
+import Home from '../App.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ const routes = [
   {
     path: '',
     name: 'Home',
-    meta:{showTabBar:true},
+    meta:{showTabBar:false},
     component: Home
   },
   {
@@ -51,6 +51,12 @@ const routes = [
   {
     path:'/Pay',
     name:'Pay',
+    meta:{showTabBar:false},
+    component:() => import(/* webpackChunkName: "about" */ '../views/Other/Pay.vue')
+  },
+  {
+    path:'/Captcha',
+    name:'Captcha',
     meta:{showTabBar:false},
     component:() => import(/* webpackChunkName: "about" */ '../views/Other/Pay.vue')
   },
