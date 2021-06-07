@@ -9,6 +9,9 @@ module.exports = {
         libraryName: 'mand-mobile',
         libraryDirectory: 'components'
       }
-    ]
+    ],
+    ["@nutui/babel-plugin-separate-import", {
+      "style": "scss"
+    }]
   ]
 }

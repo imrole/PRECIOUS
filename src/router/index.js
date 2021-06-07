@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../App.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -58,7 +58,7 @@ const routes = [
     path:'/Captcha',
     name:'Captcha',
     meta:{showTabBar:false},
-    component:() => import(/* webpackChunkName: "about" */ '../views/Other/Pay.vue')
+    component:() => import(/* webpackChunkName: "about" */ '../views/Other/Signature.vue')
   },
   {
     path:'/ToChat',
@@ -67,6 +67,18 @@ const routes = [
     component:() => import(/* webpackChunkName: "about" */ '../views/Other/Chat.vue'),
     props: route => ({ userId: route.query.userId })
   },
+  {
+    path:'/Login',
+    name:'login',
+    meta:{showTabBar:false},
+    component:() => import(/* webpackChunkName: "about" */ '../views/login.vue')
+  },
+  {
+    path:'/Register',
+    name:'register',
+    meta:{showTabBar:false},
+    component:() => import(/* webpackChunkName: "about" */ '../views/register.vue')
+  }
 ]
 
 const originalPush = VueRouter.prototype.push

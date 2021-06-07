@@ -13,10 +13,6 @@ import {TabBar, Toast} from 'mand-mobile'
 
 export default {
   name: 'tab-bar-demo',
-  /* DELETE */
-  title: '监听事件',
-  titleEnUS: 'Events',
-  /* DELETE */
   components: {
     [TabBar.name]: TabBar,
   },
