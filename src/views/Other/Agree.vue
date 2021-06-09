@@ -1,3 +1,4 @@
+<!--验证按钮组件-->
 <template>
   <div class="md-example-child md-example-child-agree md-example-child-1">
     <md-agree

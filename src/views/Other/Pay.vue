@@ -1,4 +1,4 @@
-<!--支付框-->
+<!--支付组件-->
 <template>
   <div class="md-example-child md-example-child-cashier">
     <md-field

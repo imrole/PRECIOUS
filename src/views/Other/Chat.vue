@@ -1,7 +1,7 @@
+<!--聊天组件-->
 <template>
   <div class="md-example-child md-example-child-tip md-example-child-tip-2">
       {{userId}}
-    
   </div>
 </template>
 

@@ -1,3 +1,4 @@
+<!--申请记录组件-->
 <template>
 <div>
   <TopTabBar></TopTabBar>

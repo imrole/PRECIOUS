@@ -1,4 +1,4 @@
-<!--设置身份码-->
+<!--身份码组件-->
 <template>
   <div class="md-example-child md-example-child-codebox md-example-child-codebox-0">
     <md-codebox

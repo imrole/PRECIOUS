@@ -47,7 +47,6 @@ export default {
     $_selected(item) {
       Dialog.alert({
         content:item.goto,
-        //content: `selected: ${JSON.stringify(item)}`,
       })
       console.log('action-sheet selected:', JSON.stringify(item))
     },

@@ -1,3 +1,4 @@
+<!--返回组件（顶部导航）-->
 <template>
     <div class="m-icon">
         <md-icon name="arrow-left" slot="left" @click="$router.back()"/>

@@ -1,4 +1,4 @@
-<!--提示框-->
+<!--滚动提示框组件-->
 <template>
   <div class="md-example-child md-example-child-notice-bar md-example-child-notice-bar-6">
     <md-notice-bar

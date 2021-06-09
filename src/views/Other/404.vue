@@ -11,9 +11,6 @@ import {ResultPage} from 'mand-mobile'
 
 export default {
   name: 'result-page-demo',
-  /* DELETE */
-  title: '404',
-  /* DELETE */
   components: {
     [ResultPage.name]: ResultPage,
   },
